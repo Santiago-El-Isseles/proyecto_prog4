@@ -1,0 +1,296 @@
+/*Tipografía de dark souls */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+/* Estilos Generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Un color oscuro para el fondo */
+    color: #f0f0f0; /* Color de texto claro */
+    line-height: 1.6;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    padding: 1rem 0;
+    border-bottom: 2px solid #ffffffd1;
+    position: sticky; /* Sticky header para la navegación */
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ffffff; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: orange;
+}
+
+/* Sección principal (Inicio) */
+.principal {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://wallpapers.com/images/hd/dark-souls-remastered-fan-art-cover-xamzi5cjp8dae4qy.webp') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px; /* Altura mínima para la sección hero */
+}
+
+.principal h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.9);
+}
+
+.principal p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.btn {
+    display: inline-block;
+    background-color: #8c0000; /* Rojo oscuro para el botón */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 2px solid #660000;
+}
+
+.btn:hover {
+    background-color: #a30000;
+    border-color: #800000;
+}
+
+/* Secciones de Contenido */
+.section-content {
+    padding: 60px 0;
+    background-color: #242424;
+    margin-bottom: 20px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.section-content:nth-child(even) { /* Color de fondo alterno para secciones */
+    background-color: #1e1e1e;
+}
+
+.section-content h2 {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: orange;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.section-content p {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Tarjetas de Juego */
+.card {
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(206, 206, 206, 0.6);
+}
+
+.card h3 {
+    font-family: 'Cinzel', serif;
+    color: #f0f0f0;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+}
+
+/* Lista de Lore/Jefes */
+.section-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.section-content ul li {
+    background-color: #333;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #8c0000;
+    font-size: 1.1rem;
+    justify-items: center;
+}
+
+
+
+.boss-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.boss-item {
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boss-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 68, 0, 0.734);
+
+    h3
+    {
+        color: orange;
+    }
+}
+
+
+
+.boss-item img {
+    max-width: 100%;
+    height: 180px; /* Altura fija para las imágenes de los jefes */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+}
+
+.boss-item h3 {
+    font-family: 'Cinzel', serif;
+    color: #f0f0f0;
+    margin-top: 0;
+    font-size: 1.6rem;
+}
+
+/* Footer */
+footer {
+    background-color: #0d0d0d;
+    color: #999;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #333;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/*Que el diseño sea responsivo*/
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    .principal h2 {
+        font-size: 2.5rem;
+    }
+
+    .principal p {
+        font-size: 1.1rem;
+    }
+
+    .section-content h2 {
+        font-size: 2rem;
+    }
+
+    .game-card, .boss-item {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .principal h2 {
+        font-size: 2rem;
+    }
+
+    .section-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+
+
