@@ -249,8 +249,8 @@
                                 <td><?= $datos->email ?></td>
                                 <td><?= $datos->nota ?></td>
                                 <td><?= $datos->fechanota ?></td>
-                                <td><a href="edit_index.php?id=<?= $datos->id ?>" class="btn btn-sm btn-light"><i class="fa-solid fa-pencil"></i></a></td>
-                                <td><a href="delete_index.php?id=<?= $datos->id ?>" class="btn btn-sm btn-danger" onclick="return confirm('¿Desea eliminar este comentario?')"><i class="fa-solid fa-trash"></i></a></td>
+                                <td><a href="edit_index.php?edit=<?= $datos->id ?>" class="btn btn-sm btn-light" onclick="return confirm('¿Desea editar este comentario?')"><i class="fa-solid fa-pencil"></i></a></td>
+                                <td><a href="controller/delete_comment.php?id=<?= $datos->id ?>" class="btn btn-sm btn-danger" onclick="return confirm('¿Desea eliminar este comentario?')"><i class="fa-solid fa-trash"></i></a></td>
                             </tr>
                             <?php endwhile; ?>
                         </tbody>
